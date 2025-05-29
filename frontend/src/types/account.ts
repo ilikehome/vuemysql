@@ -1,0 +1,1 @@
+export type AccountType = 'income' | 'expense'  // 明确定义类型

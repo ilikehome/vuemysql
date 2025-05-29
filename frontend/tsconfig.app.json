@@ -1,0 +1,14 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["src/**/*"],
+  "exclude": ["src/**/*.spec.ts", "src/**/*.test.ts"],
+  "compilerOptions": {
+    "composite": true,
+    "tsBuildInfoFile": "./tsconfig.build.tsbuildinfo",
+    "baseUrl": ".",
+    "types": [],
+    "paths": {  // 新增：路径映射
+      "@/*": ["src/*"]
+    }
+  }
+}
