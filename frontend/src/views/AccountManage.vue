@@ -2,11 +2,10 @@
   <div class="account-manage">
     <h2>记账管理</h2>
     
-    <!-- 操作按钮 -->
+    <!-- 操作按钮（删除原退出登录按钮） -->
     <div class="action-buttons">
       <button @click="showAddModal = true">新增账目</button>
-      <!-- 新增退出登录按钮 -->
-      <button @click="handleLogout">退出登录</button>
+      <!-- 原退出登录按钮已移除 -->
     </div>
 
     <!-- 账目列表 -->
