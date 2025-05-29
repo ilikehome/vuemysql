@@ -1,8 +1,9 @@
 <template>
   <div class="login-container">
     <h2>用户登录</h2>
-    <input v-model="username" placeholder="用户名" />
-    <input type="password" v-model="password" placeholder="密码" />
+    <!-- 添加.trim修饰符 -->
+    <input v-model.trim="username" placeholder="用户名" />
+    <input type="password" v-model.trim="password" placeholder="密码" />
     <button @click="handleLogin">登录</button>
     <p v-if="error">{{ error }}</p>
   </div>

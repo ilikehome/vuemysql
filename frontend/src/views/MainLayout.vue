@@ -42,7 +42,7 @@ const handleLogout = () => {
 </script>
 
 <style scoped>
-/* 保持原有样式，新增按钮样式与导航项一致 */
+/* 合并后的.nav-item样式 */
 .nav-item {
   display: block;
   padding: 10px;
@@ -56,8 +56,10 @@ const handleLogout = () => {
   text-align: left;
   cursor: pointer;
 }
-.nav-item:hover {
+.nav-item:hover,
+.nav-item.router-link-exact-active {
   background: #e2e8f0;
+  color: #2563eb;
 }
 .main-layout {
   display: flex;
